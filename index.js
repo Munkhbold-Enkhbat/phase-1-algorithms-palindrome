@@ -22,18 +22,22 @@ function isPalindrome(word) {
   compare it with the given string
   return true if palindrome, else false 
 */
-let myTest = str => isPalindrome(str) ? console.log(`${str} is a palindrome!`) : console.log(`${str} is not a palindrome!`)
+
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
-  myTest('madam')
-  myTest('maiden')
+  console.log("Expecting: true");
+  console.log("=> ", isPalindrome("a"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("Abba"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome(""));
 
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
-
-  console.log("");
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
